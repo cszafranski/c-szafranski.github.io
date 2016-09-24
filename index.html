@@ -2,124 +2,78 @@
 <!-- Tutorial site: http://1stwebdesigner.com/parallax-scrolling-tutorial/ -->
 <!--TODO: Get login so I can post updates and stuff + -->
 <html lang="en">
+<html>
 <head>
 <style>
-div.container {
-    width: 100%;
-    border: 1px solid gray;
-}
-
-header, footer {
-    padding: 1em;
-    color: white;
-    background-color: black;
-    clear: left;
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
     text-align: center;
 }
 
-nav {
-    float: left;
-    max-width: 160px;
-    margin: 0;
-    padding: 1em;
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
 }
 
-nav ul {
+.article {
+    text-align: left;
+}
+
+header {background: black;color:white;}
+footer {background: #aaa;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
     list-style-type: none;
-    padding: 0;
+ padding: 0;
 }
    
-nav ul a {
-    text-decoration: none;
+.nav ul a {
+ text-decoration: none;
 }
 
-article {
-    margin-left: 170px;
-    border-left: 1px solid gray;
-    padding: 1em;
-    overflow: hidden;
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
 }
 </style>
 </head>
-<div class="container">
 <body>
-<!-- Header Start -->
-<header id ="header">
-<div class="content">
-<div id="logo"><a href="">PARALLAX </a></div>
-<nav id="nav">
 
+<div class="flex-container">
+<header>
+  <h1>Chris Szafranski</h1>
+  <h3>Site under Construction...</h3>
+</header>
+
+<nav class="nav">
 <ul>
-<li><a href="#bio" class="active" title="Next Section" >Bio</a></li>
- <li><a href="#about" title="Next Section">About</a></li>
- <li><a href="#compe" title="Next Section">Computer Engineering</a></li>
- <li><a href="#phil" title="Next Section">Philosophy</a></li>
- <li><a href="#contact" title="Next Section">Contact</a></li>
-
+  <li><a href="#">Bio</a></li>
+  <li><a href="#">Projects</a></li>
+  <li><a href="#">Gallery</a></li>
 </ul>
 </nav>
-</div>
-</header>
-<!-- Header End -->
-<!-- Pages Start -->
-<div id="bio">
- <div class="content">
- <div id="Biography"> </div>
 
- <div id="snowflakes1"></div><!-- Not sure what this does -->
- <div id="snowflakes2"></div><!-- Not sure what this does -->
- <h2>Chris</h2>
- <h1>Szafranski</h1>
- <div id="divider"> </div><!-- Not sure what this does -->
- <h3>Website under construction... Welcome!</h3>
- <div id="ribbon"></div><!-- Not sure what this does -->
- <div id="new_year"> </div><!-- Not sure what this does -->
+<article class="article">
+  <h1>Bio</h1>
+  <p>I am currently studying Computer Engineering at Lehigh University and pursuing a minor in Philosophy. 
+  I am facinated in how things worked. In distinguishing between the gadgets that 
+  I like and those that passed by the wayside, I want to know how they work so I could improve them and make them my own. 
+  This pssion drove me to pursue an education in Computer Engineering</p>
+  <p>As often as I explore how devices work I like to explore how the world works. 
+  The meaning in life, the value of things and what is right and wrong are all topics I enjoy reading about.
+  For this reason I am pursuing a minor in philosophy. Please refer to the page on philosophy for more detail.</p>
+  <p><strong>Take a look at my projects</strong></p>
+</article>
 
- </div> 
- </div> 
- <div id="about">
- <div class="content" >
- <div class="update_container"><!-- Not sure what this does -->
- <h3 class="update">About</h3>
- <h5 class= "subheader">Computer Engineering</h5>
- <p>I am currently studying Computer Engineering at Lehigh University and pursuing a minor in Philosophy.
- I am facinated in how things worked. In distinguishing between the gadgets that I like and those that
- passed by the wayside, I want to know how they work so I could improve them and make them my own. This pssion drove me to
-pursue an education in Computer Engineering. </p>
-<h5 class= "subheader">Philosophy</h5>
-<p>As often as I explore how devices work I like to explore how the world works. The meaning in life, the value of things and what is 
-right and wrong are all topics I enjoy reading about. For this reason I am pursuing a minor in philosophy. Please refer to the page on 
-philosophy for more detail. Rush Chi Phi </p>
- <img src="image.jpg" align="left"style="width:304px;height:228px;"/> <h4 class="image_1">Circuits in ECE Lab: </h4>
- </div> 
- </div> 
- </div> 
- <div id="compe">
- <div class="content">
- <div class="update_container"><!-- Not sure what this does -->
- <h3 class="update">Updating content...</h3>
- <img src="img/image.png" align="left"/> <h4 class="image_2">Image: </h4>
- </div> 
- </div> 
- </div> 
- <div id="phil">
- <div class="content">
- <div class="update_container">
- <h3 class="update">Updating content...</h3>
- <img src="img/image.png" align="left"/> <h4 class="image_3">Image: </h4>
- </div> 
- </div> 
- </div> 
- <div id="contact">
- <div class="content">
- <div class="update_container">
- <h3 class="update">Updating content...</h3>
- <img src="img/image.png" align="left"/> <h4 class="image_4">Image: </h4>
- </div> 
- </div> 
- </div> 
- <!----- End of Pages --->
- <!----- End of File --->
+<footer>Under Construction</footer>
 </div>
+
 </body>
 </html>
+
