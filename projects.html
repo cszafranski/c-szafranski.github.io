@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Tutorial site: http://1stwebdesigner.com/parallax-scrolling-tutorial/ -->
+<!--TODO: Get login so I can post updates and stuff + -->
+<html lang="en">
+<html>
+<head>
+<style>
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: center;
+}
+
+header {background: #5F9EA0;color:#FFF8DC;}
+footer {background: #708090;color:#FFF8DC;}
+.nav {background:#FFF8DC;}
+
+.nav ul {
+    list-style-type: none;
+ padding: 0;
+}
+   
+.nav ul a {
+ text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1>Chris Szafranski</h1>
+  <h3>Site under Construction...</h3>
+</header>
+
+<footer>Under Construction...</footer>
+</div>
+
+</body>
+</html>
+
