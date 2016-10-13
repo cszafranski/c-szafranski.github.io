@@ -18,7 +18,16 @@
     -webkit-flex: 1 100%;
     flex: 1 100%;
 }
-
+.flex-item{
+    background-color: #FFF8DC;
+    flex: 1 100%;
+    margin: 10px;
+    }
+    .flex-mini{
+    background-color: #708090;
+    flex: 1 100%;
+    margin: 10px;
+    }
 .article {
     text-align: center;
 }
@@ -29,7 +38,7 @@ footer {background: #708090;color:#FFF8DC;}
 
 .nav ul {
     list-style-type: none;
- padding: 0;
+ padding: 10;
 }
    
 .nav ul a {
@@ -43,37 +52,35 @@ footer {background: #708090;color:#FFF8DC;}
 }
 </style>
 </head>
+    
 <body>
-
 <div class="flex-container">
-<header>
-  <h1><a href="index.html" style="text-decoration: none; color:#FFF8DC;">Chris Szafranski</a></h1>
-  <h3>Site under Construction...</h3>
-</header>
+        <header>
+             <h1><a href="index.html" style="text-decoration: none; color:#FFF8DC;">Chris Szafranski</a></h1>
+             <h3>Site under Construction...</h3>
+        </header>
+    <div class="flex-item">
+        <ul>
+            <div class="flex-mini"><a href="#bio">Bio</a></div>
+            <div class="flex-mini"><a href="projects.html">Projects</a></div>
+            <div class="flex-mini"><a href="#gallery">Gallery</a></div>
+        </ul>
+    </div>
+    <div class="flex-item">
+        <h1>Bio</h1>
+            <p>I am currently studying Computer Engineering at Lehigh University and pursuing a minor in Philosophy. 
+             I am facinated in how things worked. In distinguishing between the gadgets that 
+             I like and those that passed by the wayside, I want to know how they work so I could improve them and make them my own. 
+             This pssion drove me to pursue an education in Computer Engineering</p>
+            <p>As often as I explore how devices work I like to explore how the world works. 
+            The meaning in life, the value of things and what is right and wrong are all topics I enjoy reading about.
+             For this reason I am pursuing a minor in philosophy. Please refer to the page on philosophy for more detail.</p>
+            <p><strong>Take a look at my projects</strong></p>
+    </div>
 
-<nav class="nav">
-<ul>
-  <li><a href="#bio">Bio</a></li>
-  <li><a href="projects.html">Projects</a></li>
-  <li><a href="#gallery">Gallery</a></li>
-</ul>
-</nav>
-
-<article class="article">
-  <h1>Bio</h1>
-  <p>I am currently studying Computer Engineering at Lehigh University and pursuing a minor in Philosophy. 
-  I am facinated in how things worked. In distinguishing between the gadgets that 
-  I like and those that passed by the wayside, I want to know how they work so I could improve them and make them my own. 
-  This pssion drove me to pursue an education in Computer Engineering</p>
-  <p>As often as I explore how devices work I like to explore how the world works. 
-  The meaning in life, the value of things and what is right and wrong are all topics I enjoy reading about.
-  For this reason I am pursuing a minor in philosophy. Please refer to the page on philosophy for more detail.</p>
-  <p><strong>Take a look at my projects</strong></p>
-</article>
-
-<footer><footer>Find code and more at <a href="https://github.com/c-szafranski/" style="text-decoration: none; color:#FFF8DC;">GitHub</a></footer>
+        <footer><footer>Find code and more at <a href="https://github.com/c-szafranski/" style="text-decoration: none; color:#FFF8DC;">GitHub</a></footer>
+    
 </div>
-
 </body>
 </html>
 
