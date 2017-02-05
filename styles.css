@@ -4,9 +4,18 @@ min-height:50px;
 footer {background: #CA6F1E;color:#FFFFFF;
 min-height:30px;
 }
-
-
-.flex-container{
+body{
+ font-family: "Georgia";
+    font-size: 120%
+}
+h1{
+    font-family: "Georgia";
+    font-size: 120%;
+    font-weight: bold;
+    color:#e6ffff 
+}
+.container{
+    width:800px;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
@@ -14,23 +23,21 @@ min-height:30px;
     text-align: left;
     float:left;
 }
+.banner{
+    width:100%;
+    background-color: #006666;
+        
+}
 
-.flex-item{
-    background-color: #FFFFFF;
+.item-left{
+    background-color: #003333;/*dark blue */
     flex: 1 100%;
-    margin: 10px;
     float:left;
-    width:50%;
+    width:75%;
     }
-
-
-.nav {background:#CA6F1E;}
-
-.nav ul {
-    list-style-type: none;
- padding: 10;
-}
-   
-.nav ul a {
- text-decoration: none;
-}
+.item-right{
+    background-color: #ccffff;/*light blue */
+    flex: 1 100%;
+    float:left;
+    width:25%;
+    }
